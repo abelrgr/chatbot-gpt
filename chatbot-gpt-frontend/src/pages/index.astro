@@ -1,0 +1,61 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Banner from "../components/Banner.astro";
+import Card from "../components/Card.astro";
+import Contact from "../components/Contact.astro";
+import Chat from "../components/Chat.tsx";
+---
+
+<Layout title="GPT-chatbot">
+	<Banner />
+	<div class="mx-auto w-2/3">
+		<section>
+			<div class="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+				<div
+					class="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16"
+				>
+					<div class="mx-auto max-w-lg text-center lg:mx-0 ltr:lg:text-left">
+						<h2 class="text-3xl font-bold sm:text-4xl">
+							Lorem ipsum dolor
+						</h2>
+
+						<p class="mt-4 text-gray-600">
+							Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut vero
+							aliquid sint distinctio iure ipsum cupiditate? Quis, odit
+							assumenda? Deleniti quasi inventore, libero reiciendis minima
+							aliquid tempora. Obcaecati, autem.
+						</p>
+
+						<a
+							href="#"
+							class="mt-8 inline-block rounded bg-teal-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-teal-700 focus:outline-none focus:ring focus:ring-yellow-400"
+						>
+							Get Started Today
+						</a>
+					</div>
+
+					<div class="grid grid-cols-2 gap-4 sm:grid-cols-3">
+						<Card title="Service # 1" />
+						<Card title="Service # 2" />
+						<Card title="Service # 3" />
+
+						<Card title="Service # 4" />
+						<Card title="Service # 5" />
+						<Card title="Service # 6" />
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<Contact />
+		</section>
+	</div>
+
+	<Chat client:load />
+</Layout>
+
+<script>
+	const el = document.getElementById("year");
+	if (el) el.textContent = new Date().getFullYear() + "";
+</script>

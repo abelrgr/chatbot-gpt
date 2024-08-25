@@ -1,0 +1,13 @@
+{
+  "env": {
+    "node": true
+  },
+  "plugins": ["node", "import"],
+  "extends": ["eslint:recommended", "plugin:node/recommended"],
+  "parserOptions": {
+    "ecmaVersion": 2018
+  },
+  "rules": {
+    "node/no-unsupported-features/es-syntax": "off"
+  }
+}

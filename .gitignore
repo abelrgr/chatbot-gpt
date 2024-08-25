@@ -1,0 +1,35 @@
+# chatbot-gpt-frontend/
+
+# build output
+chatbot-gpt-frontend/dist/
+
+# generated types
+chatbot-gpt-frontend/.astro/
+
+# dependencies
+chatbot-gpt-frontend/node_modules/
+chatbot-gpt-frontend/package-lock.json
+
+# logs
+chatbot-gpt-frontend/npm-debug.log*
+chatbot-gpt-frontend/yarn-debug.log*
+chatbot-gpt-frontend/yarn-error.log*
+chatbot-gpt-frontend/pnpm-debug.log*
+
+# environment variables
+chatbot-gpt-frontend/.env
+chatbot-gpt-frontend/.env.production
+
+# macOS-specific files
+chatbot-gpt-frontend/.DS_Store
+
+# jetbrains setting folder
+chatbot-gpt-frontend/.idea/
+
+################
+
+# chatbot-gpt-backend/
+
+# dependencies
+chatbot-gpt-backend/node_modules/
+chatbot-gpt-backend/package-lock.json
